@@ -77,3 +77,38 @@
 .content_cv em {
     font-weight: 700;
 }
+
+/* Menu */
+.navbar {
+    background-color: #2a50d5;
+    height: 75px;
+    line-height: 75px;
+    text-align: center;
+}
+
+.menu {
+    display: inline-block;
+    height: 100%;
+    font-size: 0;
+    width: 1135px;
+    margin: 0 auto;
+}
+
+.menu > li {
+    display: inline-block;
+    font-size: 15px;
+}
+
+.menu > li > a {
+    display: inline-block;
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    color: white;
+    background-color: transparent;
+}
+
+.menu > li:hover > a {
+    background-color: white;
+    color: #2a50d5;
+}
