@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Register</title>
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <div class="container_form">
+            <form autocomplete="off" spellcheck="false">
+                <label for="displayName">Display Name</label>
+                <input
+                    type="text"
+                    id="displayName"
+                    placeholder="Tên hiển thị của bạn trên trang (có thể là biệt danh, tên thật, v.v.)"
+                />
+
+                <label for="email">Email</label>
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Địa chỉ email dùng để đăng nhập và nhận thông báo"
+                />
+
+                <label for="phone">Phone Number</label>
+                <input
+                    type="tel"
+                    id="phone"
+                    placeholder="Số điện thoại để liên hệ hoặc xác minh tài khoản"
+                />
+
+                <label for="password">Password</label>
+                <input
+                    type="password"
+                    id="password"
+                    placeholder="Mật khẩu bảo vệ tài khoản, nên đủ mạnh"
+                />
+
+                <label for="confirmPassword">Confirm Password</label>
+                <input
+                    type="password"
+                    id="confirmPassword"
+                    placeholder="Nhập lại mật khẩu ở trên để xác nhận"
+                />
+
+                <label>Gender</label>
+                <input type="radio" id="male" name="gender" value="Male" />
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="Female" />
+                <label for="female">Female</label>
+                <input type="radio" id="other" name="gender" value="Other" />
+                <label for="other">Other</label>
+
+                <label for="dob">Date of Birth</label>
+                <input type="date" id="dob" name="dob" />
+
+                <label for="address">Address</label>
+                <textarea
+                    id="address"
+                    placeholder="Địa chỉ hiện tại (có thể đơn giản như tỉnh/thành phố)"
+                ></textarea>
+
+                <label for="avatarInput" class="avatar-label"></label>
+                <input
+                    type="file"
+                    id="avatarInput"
+                    name="avatar"
+                    accept="image/*"
+                />
+
+                <label>Communication Preferences</label>
+                <div class="checkbox-group">
+                    <label
+                        ><input type="checkbox" name="newsletter" /> Subscribe
+                        to Newsletter</label
+                    >
+                    <label
+                        ><input type="checkbox" name="promotions" /> Receive
+                        Promotional Emails</label
+                    >
+                    <label
+                        ><input type="checkbox" name="updates" /> Get Product
+                        Updates</label
+                    >
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
